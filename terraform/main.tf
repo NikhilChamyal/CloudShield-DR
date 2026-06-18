@@ -91,3 +91,17 @@ module "rds" {
   ec2_security_group_id = module.security.ec2_security_group_id
 
 }
+
+#####################################
+# CloudWatch Module
+#####################################
+
+module "cloudwatch" {
+
+  source = "./modules/cloudwatch"
+
+  project_name = local.project_name
+
+  instance_id = module.compute.instance_id
+
+}

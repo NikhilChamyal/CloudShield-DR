@@ -33,3 +33,13 @@ output "db_endpoint" {
   value = module.rds.db_endpoint
 
 }
+
+#####################################
+# CloudWatch
+#####################################
+
+output "cpu_alarm_name" {
+
+  value = module.cloudwatch.cpu_alarm_name
+
+}
