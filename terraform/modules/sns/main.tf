@@ -1,0 +1,23 @@
+#####################################
+# SNS Topic
+#####################################
+
+resource "aws_sns_topic" "alerts" {
+
+  name = "cloudshield-dr-alerts"
+
+}
+
+#####################################
+# Email Subscription
+#####################################
+
+resource "aws_sns_topic_subscription" "email" {
+
+  topic_arn = aws_sns_topic.alerts.arn
+
+  protocol = "email"
+
+  endpoint = var.email
+
+}

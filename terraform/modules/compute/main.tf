@@ -84,6 +84,14 @@ resource "aws_instance" "web" {
 
     Name = "${var.project_name}-Web-Server"
 
+    Project = var.project_name
+
+    Role = "WebServer"
+
+    Backup = "Enabled"
+
+    Environment = "Development"
+
   }
 
 }

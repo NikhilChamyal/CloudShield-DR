@@ -113,8 +113,11 @@ resource "aws_db_instance" "mysql" {
 
   tags = {
 
-    Name = "cloudshield-dr-mysql"
-
+    Name        = "cloudshield-dr-mysql"
+    Project     = var.project_name
+    Backup      = "Enabled"
+    Environment = "Development"
+    Role        = "Database"
   }
 
 }

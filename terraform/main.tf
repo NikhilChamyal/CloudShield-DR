@@ -8,6 +8,10 @@ module "network" {
 
   project_name = local.project_name
 
+  az_1 = "ap-south-1a"
+
+  az_2 = "ap-south-1b"
+
 }
 
 #####################################
@@ -93,6 +97,64 @@ module "rds" {
 }
 
 #####################################
+# SNS Module
+#####################################
+
+module "sns" {
+
+  source = "./modules/sns"
+
+  project_name = local.project_name
+
+  email = "nikhilchamyal602@gmail.com"
+
+}
+
+#####################################
+# Lambda Module
+#####################################
+
+module "lambda" {
+
+  source = "./modules/lambda"
+
+  project_name = local.project_name
+
+  sns_topic_arn = module.sns.topic_arn
+
+  instance_id = module.compute.instance_id
+
+}
+
+#####################################
+# EBS Snapshot Module
+#####################################
+
+module "ebs_snapshot" {
+
+  source = "./modules/ebs_snapshot"
+
+  project_name = local.project_name
+
+  instance_id = module.compute.instance_id
+
+}
+
+#####################################
+# RDS Snapshot Module
+#####################################
+
+module "rds_snapshot" {
+
+  source = "./modules/rds_snapshot"
+
+  project_name = local.project_name
+
+  db_identifier = module.rds.db_identifier
+
+}
+
+#####################################
 # CloudWatch Module
 #####################################
 
@@ -104,4 +166,7 @@ module "cloudwatch" {
 
   instance_id = module.compute.instance_id
 
+  sns_topic_arn = module.sns.topic_arn
+
 }
+

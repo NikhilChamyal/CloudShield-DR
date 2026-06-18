@@ -39,3 +39,13 @@ variable "enable_nat_gateway" {
   type        = bool
   default     = false
 }
+
+variable "az_1" {
+  description = "First Availability Zone"
+  type        = string
+}
+
+variable "az_2" {
+  description = "Second Availability Zone"
+  type        = string
+}

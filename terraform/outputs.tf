@@ -43,3 +43,21 @@ output "cpu_alarm_name" {
   value = module.cloudwatch.cpu_alarm_name
 
 }
+
+output "sns_topic_arn" {
+
+  value = module.sns.topic_arn
+
+}
+
+output "rds_snapshot_lambda" {
+
+  value = module.rds_snapshot.snapshot_lambda_name
+
+}
+
+output "rds_snapshot_schedule" {
+
+  value = module.rds_snapshot.eventbridge_rule_name
+
+}
