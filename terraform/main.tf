@@ -39,3 +39,15 @@ module "compute" {
   security_group_id = module.security.ec2_security_group_id
 
 }
+
+#####################################
+# S3 Module
+#####################################
+
+module "s3" {
+
+  source = "./modules/s3"
+
+  project_name = local.project_name
+
+}
