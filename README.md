@@ -332,74 +332,114 @@ Include screenshots of:
 * AWS Systems Manager Session Manager
 
 
-💻 Tech Stack
-Cloud Platform
-Amazon Web Services (AWS)
-Infrastructure as Code
-Terraform
-Programming Language
-Python
-Compute
-Amazon EC2
-Database
-Amazon RDS MySQL
-Storage
-Amazon S3
-Networking
-Amazon VPC
-Application Load Balancer
-Internet Gateway
-Security Groups
-Route Tables
-Monitoring & Notifications
-Amazon CloudWatch
-Amazon SNS
-Automation
-AWS Lambda
-Administration
-AWS Systems Manager Session Manager
-🎯 Skills Demonstrated
-Infrastructure as Code (Terraform)
-AWS Cloud Architecture
-Disaster Recovery Planning
-Multi-Region Infrastructure
-Cloud Networking
-Infrastructure Monitoring
-Backup & Recovery
-Cloud Automation
-IAM Policy Management
-Amazon S3 Cross-Region Replication
-Infrastructure Security
-Cloud Cost Optimization
-DevOps Best Practices
-🔒 Security Features
-Infrastructure provisioned using Terraform
-IAM Least Privilege Policies
-Private Database Deployment
-Encrypted Amazon S3 Storage
-Versioned Backup Storage
-Public Access Block Enabled
-Security Group Isolation
-CloudWatch Monitoring
-Email Alerting using Amazon SNS
-🚧 Future Enhancements
-Route 53 DNS Failover
-Auto Scaling Groups
-Amazon ECS / Fargate
-Amazon EKS
-AWS Backup
-CloudTrail
-AWS Config
-GuardDuty
-GitHub Actions CI/CD
-Terraform Remote Backend
-DynamoDB State Locking
+---
+
+# 💻 Tech Stack
+
+### Cloud Platform
+
+* Amazon Web Services (AWS)
+
+### Infrastructure as Code
+
+* Terraform
+
+### Programming Language
+
+* Python
+
+### Compute
+
+* Amazon EC2
+
+### Database
+
+* Amazon RDS MySQL
+
+### Storage
+
+* Amazon S3
+
+### Networking
+
+* Amazon VPC
+* Application Load Balancer
+* Internet Gateway
+* Security Groups
+* Route Tables
+
+### Monitoring & Notifications
+
+* Amazon CloudWatch
+* Amazon SNS
+
+### Automation
+
+* AWS Lambda
+
+### Administration
+
+* AWS Systems Manager Session Manager
+
+---
+
+# 🎯 Skills Demonstrated
+
+* Infrastructure as Code (Terraform)
+* AWS Cloud Architecture
+* Disaster Recovery Planning
+* Multi-Region Infrastructure
+* Cloud Networking
+* Infrastructure Monitoring
+* Backup & Recovery
+* Cloud Automation
+* IAM Policy Management
+* Amazon S3 Cross-Region Replication
+* Infrastructure Security
+* Cloud Cost Optimization
+* DevOps Best Practices
+
+---
+
+# 🔒 Security Features
+
+* Infrastructure provisioned using Terraform
+* IAM Least Privilege Policies
+* Private Database Deployment
+* Encrypted Amazon S3 Storage
+* Versioned Backup Storage
+* Public Access Block Enabled
+* Security Group Isolation
+* CloudWatch Monitoring
+* Email Alerting using Amazon SNS
+
+---
+
+# 🚧 Future Enhancements
+
+* Route 53 DNS Failover
+* Auto Scaling Groups
+* Amazon ECS / Fargate
+* Amazon EKS
+* AWS Backup
+* CloudTrail
+* AWS Config
+* GuardDuty
+* GitHub Actions CI/CD
+* Terraform Remote Backend
+* DynamoDB State Locking
+
+---
 
 
-👨‍💻 Author
-Nikhil Chamyal
+# 👨‍💻 Author
 
-Cloud Engineer | DevOps Engineer
+## Nikhil Chamyal
+
+**Cloud Engineer | DevOps Engineer**
+
+
+
 
 
 
